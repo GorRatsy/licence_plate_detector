@@ -1,5 +1,4 @@
 import cv2
-import matplotlib as plt
 
 cam = cv2.VideoCapture(0)
 cv2.namedWindow('test')
@@ -10,7 +9,6 @@ while True:
         print('Failed to grab frame')
         break
 
-    frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     cv2.imshow('Capturing', frame)
 
     k = cv2.waitKey(1)
